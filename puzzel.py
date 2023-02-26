@@ -1,7 +1,7 @@
 import random as rd
+import word_lists as wl
 
-words =["computer","printer","laptop","desktop","mobile","tablet","ipad","apple","banana","orange","mango"]
-word = rd.choice(words)
+word = rd.choice(wl.words)
 
 chances = 5
 guessed_word = "_"*len(word)
@@ -27,6 +27,8 @@ while chances != 0:
 
 else:
     print("Game Over")
+
+print("The Correcr Game is ",word)
 
 
 
